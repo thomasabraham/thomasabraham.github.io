@@ -8,95 +8,92 @@
     <meta name="author" content="Thomas Abraham">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <title>Nerdow Boy</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="http://www.nerdowboy.com">Nerdow Boy</a>
-        </div>
-	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      	  <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">IGG</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Code Book</a></li>
-                <li><a href="#">Cosmonote</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Blog</a></li>
-	    <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Email</a></li>
-              </ul>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-	<p>&nbsp;</p>
-         <p> The Grand Master Turing once dreamed that he was a machine. When he awoke, he exclaimed:</p>
-	 <p> "I don't know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!" </p>
-	 <p class="pull-right">~The Tao of Programming</p>
-        <p><a class="btn btn-primary btn-lg" href="http://www.mit.edu/~xela/tao.html" target="_blank" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>I GOT GARBAGE</h2>
-          <p>A mindtree initiative to convert rag pickers into social entrepreneurs.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Code Book</h2>
-          <p>My solutions for codechef practice problems.</p>
-	  <p>CodeChef is a global programming community which host contests, trainings and events for programmers around the world.</p>
-          <p><a class="btn btn-default" href="https://github.com/thomasabraham/codebook" target="_blank" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-<!--
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
--->
+    <script type="text/x-handlebars">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.nerdowboy.com">Nerdow Boy</a>
+          </div>
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      	    <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">IGG</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Code Book</a></li>
+                  <li><a href="#">Cosmonote</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Blog</a></li>
+	            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Email</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <hr>
+      {{outlet}}
+    </script>    
 
-      <footer>
-        <p>&copy; Nerdow Boy 2014</p>
-      </footer>
-    </div> <!-- /container -->
+    <script type="text/x-handlebars" id="home">
+      <div class="jumbotron">
+        <div class="container">
+	        <p>&nbsp;</p>
+          <p> The Grand Master Turing once dreamed that he was a machine. When he awoke, he exclaimed:</p>
+	        <p> "I don't know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!" </p>
+	        <p class="pull-right">~The Tao of Programming</p>
+          <p><a class="btn btn-primary btn-lg" href="http://www.mit.edu/~xela/tao.html" target="_blank" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+      <div class="container" >
+        <div class="row">
+          {{#each App.projects.myprojects}}
+            <div class="col-md-4"> 
+              <h2>{{title}}</h2>
+              <p>{{summary}}</p>
+              <a class="btn btn-default" href="https://github.com/thomasabraham/codebook" target="_blank" role="button">View details &raquo;</a></p>
+            </div>
+          {{/each}}
+        </div>
+        <hr>
+        <footer>
+          <p>&copy; Nerdow Boy 2014</p>
+        </footer>
+      </div>
+    </script>
+    <script type="text/x-handlebars" data-template-name="project-thumbnails">
+  </script>
     <script src="js/lib/jquery-1.10.2.js"></script>
+    <script src="js/lib/handlebars-1.1.2.js"></script>
+    <script src="js/lib/ember-1.5.1.js"></script>
+    <script src="js/lib/showdown.min.js"></script>
+    <script src="js/lib/moment.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
 
