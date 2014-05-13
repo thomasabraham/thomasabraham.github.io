@@ -33,10 +33,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">IGG</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Code Book</a></li>
-                  <li><a href="#">Cosmonote</a></li>
+                  {{#each App.projects.myprojects}}
+                    <li>{{#link-to 'project' this}}{{title}}{{/link-to}}</li>
+                  {{/each}}
                 </ul>
               </li>
               <li><a href="#">About</a></li>
@@ -56,7 +55,13 @@
           </div>
         </div>
       </div>
-      {{outlet}}
+        {{outlet}}
+        <hr>
+      <div class="container">
+        <footer>
+          <p>&copy; Nerdow Boy 2014</p>
+        </footer>
+      </div>
     </script>    
 
     <script type="text/x-handlebars" id="home">
@@ -67,7 +72,7 @@
 	        <p> "I don't know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!" </p>
 	        <p class="pull-right">~The Tao of Programming</p>
           <p><a class="btn btn-primary btn-lg" href="http://www.mit.edu/~xela/tao.html" target="_blank" role="button">Learn more &raquo;</a></p>
-        </div>
+        </div>  
       </div>
       <div class="container" >
         <div class="row">
@@ -75,18 +80,21 @@
             <div class="col-md-4"> 
               <h2>{{title}}</h2>
               <p>{{summary}}</p>
-              <a class="btn btn-default" href="https://github.com/thomasabraham/codebook" target="_blank" role="button">View details &raquo;</a></p>
+              {{#link-to 'project' this}}
+                <div class="btn btn-default" role="button">View details &raquo;</div>
+              {{/link-to}}
             </div>
           {{/each}}
         </div>
-        <hr>
-        <footer>
-          <p>&copy; Nerdow Boy 2014</p>
-        </footer>
       </div>
     </script>
-    <script type="text/x-handlebars" data-template-name="project-thumbnails">
-  </script>
+
+    <script type="text/x-handlebars" id="project">
+      <div class="container" style="padding:32px">
+        <h1>{{title}}</h1>
+        <p>{{summary}}</p>
+      </div>
+    </script>
     <script src="js/lib/jquery-1.10.2.js"></script>
     <script src="js/lib/handlebars-1.1.2.js"></script>
     <script src="js/lib/ember-1.5.1.js"></script>
