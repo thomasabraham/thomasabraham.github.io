@@ -11,8 +11,19 @@ App.Router.map(function(){
 App.ProjectRoute=Ember.Route.extend({
 	model:function(params, transition){
 		var projects = App.get('projects');
-		console.log(projects[params.project_id]);
-		return projects[params.project_id];	
+		console.log(projects.myprojects.length);
+		if(projects.myprojects.length === 0){
+			$.ajax({
+				method:'GET',
+				url:'projects',
+				success:function(data){
+					App.projects.myprojects.setObjects(eval(data));
+				},
+				async:false
+			});
+		}
+		console.log(projects.myprojects);
+		return projects.myprojects.findBy('id',params.project_id);	
 	},
 });
 
@@ -20,8 +31,8 @@ App.projects = Ember.Object.create({
 	myprojects:[]
 });
 
-$(function(){
-	$.get('projects',function(data){
-		App.projects.myprojects.setObjects(eval(data));
-	});
-});
+ // $(function(){
+ // 	$.get('projects',function(data){
+ // 		App.projects.myprojects.setObjects(eval(data));
+ // 	});
+ // });
