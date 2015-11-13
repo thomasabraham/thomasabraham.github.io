@@ -8,12 +8,13 @@
     <meta name="author" content="Thomas Abraham">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <title>Nerdow Boy</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+	<script src="js/navigation.js"></script>
   </head>
 
-  <body>
-
+  <body ng-app="WEBSITE">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -27,76 +28,17 @@
         </div>
 	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       	  <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">IGG</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Code Book</a></li>
-                <li><a href="#">Cosmonote</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Blog</a></li>
-	    <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Email</a></li>
-              </ul>
-            </li>
-
+            <li class="active"><a href="#/">Home</a></li>
+            <li><a href="#/blog">Blog</a></li>
           </ul>
         </div>
       </div>
     </div>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-	<p>&nbsp;</p>
-         <p> The Grand Master Turing once dreamed that he was a machine. When he awoke, he exclaimed:</p>
-	 <p> "I don't know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!" </p>
-	 <p class="pull-right">~The Tao of Programming</p>
-        <p><a class="btn btn-primary btn-lg" href="http://www.mit.edu/~xela/tao.html" target="_blank" role="button">Learn more &raquo;</a></p>
-      </div>
+    <div class="container" style="margin-top:50px;" ng-view></div> 
+	<hr style="margin:0px"/>
+    <div class="row">
+      <p class="col-md-2 col-md-offset-5">&copy; Nerdow Boy 2014</p>
     </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>I GOT GARBAGE</h2>
-          <p>A mindtree initiative to convert rag pickers into social entrepreneurs.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Code Book</h2>
-          <p>My solutions for codechef practice problems.</p>
-	  <p>CodeChef is a global programming community which host contests, trainings and events for programmers around the world.</p>
-          <p><a class="btn btn-default" href="https://github.com/thomasabraham/codebook" target="_blank" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-<!--
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
--->
-        </div>
-      </div>
-      <hr>
-
-      <footer>
-        <p>&copy; Nerdow Boy 2014</p>
-      </footer>
-    </div> <!-- /container -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
 
