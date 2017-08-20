@@ -3,6 +3,24 @@
 
 > A computer science professional who wants to make an impact on society by solving real world problems with the help of technology.
 
+## Skills
+
+| Programming languages	| Others		| Frameworks 	|
+|-----------------------|-----------------------|---------------|
+| JAVA			| Algorithms 		| Spring	|
+| JavaScript		| Data Structures	| 		|
+| Python		| Regex			| Jersey	|
+| C			| Linux			| JPA		|
+| C++			| Docker		| Vertx		|
+| **Datastore**		| Gradle		| Bootstrap	|
+| Redis 		| Maven			| Angular	|
+| MYSQL			| Android		| Hadoop	| 
+| Postgres		| Multi-tenant platforms| Jquery	|
+| **Servers** 		| Distributed caching	| 		|
+| Tomcat		| 			| 		|
+| Apache		|			| 		|
+
+
 ## Experience
 #### Backend Software Engineer at Zalando SE
 November 2016 - Present
