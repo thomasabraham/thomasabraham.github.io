@@ -5,20 +5,19 @@
 
 ## Skills
 
-| Programming languages	| Others		| Frameworks 	|
-|-----------------------|-----------------------|---------------|
-| JAVA			| Algorithms 		| Spring	|
-| JavaScript		| Data Structures	| 		|
-| Python		| Regex			| Jersey	|
-| C			| Linux			| JPA		|
-| C++			| Docker		| Vertx		|
-| **Datastore**		| Gradle		| Bootstrap	|
-| Redis 		| Maven			| Angular	|
-| MYSQL			| Android		| Hadoop	| 
-| Postgres		| Multi-tenant platforms| Jquery	|
-| **Servers** 		| Distributed caching	| 		|
-| Tomcat		| 			| 		|
-| Apache		|			| 		|
+| Programming languages	| Others		| Frameworks 		|
+|-----------------------|-----------------------|-----------------------|
+| JAVA			| Algorithms 		| Spring		|
+| JavaScript		| Data Structures	| Spring boot 		|
+| Python		| Regex			| Spring integration	|
+| C			| Linux			| Jersey		|
+| C++			| Docker		| RxJava		|
+| **Datastore**		| Gradle		| JPA			|
+| Redis 		| Maven			| Vertx			|
+| MYSQL			| Android		| Bootstrap		| 
+| Postgres		| Multi-tenant platforms| Angular		|
+| 			| Distributed caching	| Hadoop		|
+| 			| 			| Jquery		|
 
 
 ## Experience
